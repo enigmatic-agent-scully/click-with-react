@@ -30,18 +30,18 @@ class App extends Component {
     return array;
   };
 
-  handleClick = () => {
-    if (this.id === this.state.lastClicked) {
+  handleClick = id => {
+    if (id === this.state.lastClicked) {
       this.setState({
         score: 0,
-        lastClicked: this.id,
+        lastClicked: id,
         characters: this.shuffle(Characters)
       });
       console.log(this.state);
     } else {
       this.setState({
         score: this.state.score + 1,
-        lastClicked: this.id,
+        lastClicked: id,
         characters: this.shuffle(Characters)
       });
       console.log(this.state);

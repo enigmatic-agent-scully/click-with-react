@@ -10,7 +10,7 @@ const PhotoCard = props => {
         className='card-img'
         alt={props.name}
         id={props.id}
-        onClick={() => props.handleClick()}
+        onClick={() => props.handleClick(props.id)}
       />
     </div>
   );
