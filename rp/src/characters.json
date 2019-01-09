@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "scully",
+    "image": "https://s.scifi-universe.com/personnages/photos/0/31-dana-scully.jpg"
+  },
+  {
+    "id": "2",
+    "name": "mulder",
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/68/e7/c1/68e7c1521ac94627d661f9b856e4fda3.jpg"
+  },
+  {
+    "id": "3",
+    "name": "byers",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_lone_gunmen.john_fitzgerald_byers.jpg"
+  },
+  {
+    "id": "4",
+    "name": "langley",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.richard_ringo_langly.jpg"
+  },
+  {
+    "id": "5",
+    "name": "frohike",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.melvin_frohike.jpg"
+  },
+  {
+    "id": "6",
+    "name": "kersh",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.fbi_deputy_director_alvin_kersh.jpg"
+  },
+  {
+    "id": "7",
+    "name": "follmer",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.fbi_assistant_director_brad_follmer.jpg"
+  },
+  {
+    "id": "8",
+    "name": "dogget",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.john_doggett.jpg"
+  },
+  {
+    "id": "9",
+    "name": "reyes",
+    "image": "https://img.sharetv.com/shows/characters/thumbnails/the_x-files.monica_reyes.jpg"
+  }
+]
