@@ -3,15 +3,17 @@ import './../Navbar/Navbar.css';
 
 const Navbar = props => {
   return (
-    <ul className='nav nav-tabs'>
+    <ul className='nav nav-tabs nav-fill'>
       <li className='nav-item'>
-        <a href='#home' className='nav-link'>
-          Home
-        </a>
+        <span className='navbar-brand mb-0 h1'>Click with React</span>
       </li>
-      <li className='nav-item'>Score: {props.score}</li>
       <li className='nav-item'>
-        Wins: {props.wins} || Losses: {props.losses}
+        <span className='navbar-brand mb-0 h1'>Score: {props.score}</span>
+      </li>
+      <li className='nav-item'>
+        <span className='navbar-brand mb-0 h1'>
+          Wins: {props.wins} || Losses: {props.losses}
+        </span>
       </li>
     </ul>
   );

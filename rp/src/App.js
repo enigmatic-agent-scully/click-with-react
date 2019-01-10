@@ -10,6 +10,7 @@ class App extends Component {
     score: 0,
     wins: 0,
     losses: 0,
+    clicked: [],
     characters: Characters
   };
 
@@ -33,22 +34,21 @@ class App extends Component {
   };
 
   handleClick = id => {
-    if (id === this.state.lastClicked) {
+    if (this.state.clicked.includes(id)) {
       this.setState({
         score: 0,
         losses: this.state.losses + 1,
-        lastClicked: id,
         characters: this.shuffle(Characters)
       });
     } else {
-      if (this.state.score === 9) {
+      if (this.state.clicked.length === 9) {
         this.setState({
           score: 0,
           wins: this.state.wins + 1,
-          lastClicked: id,
           characters: this.shuffle(Characters)
         });
       } else {
+        this.state.clicked.push(id);
         this.setState({
           score: this.state.score + 1,
           lastClicked: id,
@@ -67,7 +67,7 @@ class App extends Component {
           losses={this.state.losses}
         />
         <Wrapper>
-          {this.state.characters.map(character => (
+          {this.state.characters.map((character, i) => (
             <PhotoCard
               handleClick={this.handleClick}
               id={character.id}
