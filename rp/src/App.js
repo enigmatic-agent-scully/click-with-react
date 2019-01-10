@@ -44,6 +44,7 @@ class App extends Component {
       if (this.state.clicked.length === 9) {
         this.setState({
           score: 0,
+          clicked: [],
           wins: this.state.wins + 1,
           characters: this.shuffle(Characters)
         });
