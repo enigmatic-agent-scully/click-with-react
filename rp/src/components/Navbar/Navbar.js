@@ -1,4 +1,5 @@
 import React from 'react';
+import './../Navbar/Navbar.css';
 
 const Navbar = props => {
   return (
@@ -8,10 +9,9 @@ const Navbar = props => {
           Home
         </a>
       </li>
+      <li className='nav-item'>Score: {props.score}</li>
       <li className='nav-item'>
-        <a href='#about' className='nav-link'>
-          About
-        </a>
+        Wins: {props.wins} || Losses: {props.losses}
       </li>
     </ul>
   );

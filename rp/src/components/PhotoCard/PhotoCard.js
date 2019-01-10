@@ -3,11 +3,11 @@ import './PhotoCard.css';
 
 const PhotoCard = props => {
   return (
-    <div className='card click-item'>
+    <div className='click-item'>
       <img
         key={props.id}
         src={props.image}
-        className='card-img'
+        className='img-thumbnail'
         alt={props.name}
         id={props.id}
         onClick={() => props.handleClick(props.id)}
