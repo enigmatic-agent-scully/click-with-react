@@ -1,11 +1,9 @@
 .card-img {
   border: white 3px solid;
-  size: 200px !important;
+  size: 100px !important;
 }
 
 .click-item {
-  display: block;
-  box-sizing: border-box;
-  align-content: space-around;
-  size: 200px !important;
+  size: 100px !important;
+  padding-top: 10px;
 }

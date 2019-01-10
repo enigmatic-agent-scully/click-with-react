@@ -2,7 +2,11 @@ import React from 'react';
 import './wrapper.css';
 
 const Wrapper = props => {
-  return <div className='wrapper container'>{props.children}</div>;
+  return (
+    <div className='container wrapper'>
+      <div className='row'>{props.children}</div>
+    </div>
+  );
 };
 
 export default Wrapper;
