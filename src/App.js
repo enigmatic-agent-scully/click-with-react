@@ -34,25 +34,25 @@ class App extends Component {
   };
 
   handleClick = id => {
-    if (this.state.clicked.includes(id)) {
+    if (this.state.clicked.length && this.state.score === 9) {
       this.setState({
         score: 0,
-        losses: this.state.losses + 1,
+        clicked: [],
+        wins: this.state.wins + 1,
         characters: this.shuffle(Characters)
       });
     } else {
-      if (this.state.clicked.length === 9) {
+      if (this.state.clicked.includes(id)) {
         this.setState({
           score: 0,
+          losses: this.state.losses + 1,
           clicked: [],
-          wins: this.state.wins + 1,
           characters: this.shuffle(Characters)
         });
       } else {
         this.state.clicked.push(id);
         this.setState({
           score: this.state.score + 1,
-          lastClicked: id,
           characters: this.shuffle(Characters)
         });
       }

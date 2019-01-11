@@ -5,7 +5,7 @@ const Navbar = props => {
   return (
     <ul className='nav nav-tabs nav-fill'>
       <li className='nav-item'>
-        <span className='navbar-brand mb-0 h1'>Click with React</span>
+        <span className='navbar-brand mb-0 h1'>Click to start!</span>
       </li>
       <li className='nav-item'>
         <span className='navbar-brand mb-0 h1'>Score: {props.score}</span>
