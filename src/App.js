@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Wrapper from './components/Wrapper/Wrapper';
 import Characters from './characters.json';
 import PhotoCard from './components/PhotoCard/PhotoCard';
+import Jumbotron from './components/jumbotron/Jumbotron';
 
 class App extends Component {
   state = {
@@ -67,6 +68,7 @@ class App extends Component {
           wins={this.state.wins}
           losses={this.state.losses}
         />
+        <Jumbotron />
         <Wrapper>
           {this.state.characters.map((character, i) => (
             <PhotoCard

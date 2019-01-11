@@ -8,7 +8,7 @@ const PhotoCard = props => {
         <img
           key={props.id}
           src={props.image}
-          className='img-thumbnail img-fluid'
+          className='img-fluid'
           alt={props.name}
           id={props.id}
           onClick={() => props.handleClick(props.id)}
