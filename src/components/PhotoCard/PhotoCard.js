@@ -3,7 +3,7 @@ import './PhotoCard.css';
 
 const PhotoCard = props => {
   return (
-    <div className='col-md-4'>
+    <div className='col-md-4' key={props.id}>
       <div className='click-item'>
         <img
           key={props.id}
