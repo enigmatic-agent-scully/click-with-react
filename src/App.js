@@ -72,6 +72,7 @@ class App extends Component {
         <Wrapper>
           {this.state.characters.map((character, i) => (
             <PhotoCard
+              key={character.id}
               handleClick={this.handleClick}
               id={character.id}
               name={character.name}
